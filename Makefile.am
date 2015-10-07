@@ -1,7 +1,7 @@
 ACLOCAL_AMFLAGS = -I m4
 
 lib_LTLIBRARIES = libuuid.la
-libuuid_la_LDFLAGS = -no-undefined -version-info 1:0:0
+libuuid_la_LDFLAGS = -version-info 1:0:0
 
 libuuid_la_SOURCES=\
 	src/clear.c \

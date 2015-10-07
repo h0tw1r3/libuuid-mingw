@@ -3,7 +3,7 @@
 
 AC_PREREQ([2.67])
 AC_INIT([libuuid for mingw32], [1.0], [nasda60@hotmail.com], [libuuid_mingw32])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([subdir-objects foreign])
 AC_CONFIG_SRCDIR([src/clear.c])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_FILES([Makefile])
@@ -32,7 +32,6 @@ UuidIsNil(0,0);
   [AC_MSG_RESULT(yes);
    UUID_CFLAGS="-DWINVER=0x0501"
    UUID_LIBS="-lrpcrt4"
-   LDFLAGS="$LDFLAGS -no-undefined"
    AC_SUBST(UUID_CFLAGS)
    AC_SUBST(UUID_LIBS)
    AC_DEFINE(HAVE_LIB_UUID,1,[UUID Library found])],
