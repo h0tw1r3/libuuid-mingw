@@ -9,7 +9,7 @@ test_uuid_LDADD = libuuid_mingw.la
 test_uuid_CFLAGS = -I$(top_srcdir)/include
 
 lib_LTLIBRARIES = libuuid_mingw.la
-libuuid_mingw_la_LDFLAGS = -version-info 1:0:0
+libuuid_mingw_la_LDFLAGS = -version-number 1:0:1
 
 libuuid_mingw_la_SOURCES=\
 	src/clear.c \

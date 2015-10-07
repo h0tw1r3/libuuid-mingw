@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.67])
-AC_INIT([libuuid for mingw], [1.0], [nasda60@hotmail.com], [libuuid_mingw])
+AC_INIT([libuuid for mingw], [1.0.1], [nasda60@hotmail.com], [libuuid_mingw])
 AM_INIT_AUTOMAKE([subdir-objects foreign])
 AC_CONFIG_SRCDIR([src/clear.c])
 AC_CONFIG_HEADERS([config.h])
