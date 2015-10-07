@@ -32,6 +32,7 @@ extern void uuid_copy(uuid_t dst, const uuid_t src);
 extern void uuid_generate(uuid_t out);
 extern void uuid_generate_random(uuid_t out);
 extern void uuid_generate_time(uuid_t out);
+extern void uuid_generate_time_safe(uuid_t out);
 
 /* isnull.c */
 extern int uuid_is_null(const uuid_t uu);

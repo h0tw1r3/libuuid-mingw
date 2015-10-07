@@ -34,3 +34,7 @@ void uuid_generate_time(uuid_t out){
 	UuidCreateNil((UUID*)out);
 	UuidCreate((UUID*)out);
 }
+void uuid_generate_time_safe(uuid_t out){
+	UuidCreateNil((UUID*)out);
+	UuidCreate((UUID*)out);
+}
