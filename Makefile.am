@@ -1,14 +1,17 @@
 ACLOCAL_AMFLAGS = -I m4
 
+pkgconfigdir = $(libdir)/pkgconfig
+pkgconfig_DATA = uuid.pc
+
 bin_PROGRAMS = test_uuid
 test_uuid_SOURCES = src/test_uuid.c
-test_uuid_LDADD = libuuid.la
+test_uuid_LDADD = libuuid_mingw.la
 test_uuid_CFLAGS = -I$(top_srcdir)/include
 
-lib_LTLIBRARIES = libuuid.la
-libuuid_la_LDFLAGS = -version-info 1:0:0
+lib_LTLIBRARIES = libuuid_mingw.la
+libuuid_mingw_la_LDFLAGS = -version-info 1:0:0
 
-libuuid_la_SOURCES=\
+libuuid_mingw_la_SOURCES=\
 	src/clear.c \
 	src/compare.c \
 	src/copy.c \
